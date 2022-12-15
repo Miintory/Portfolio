@@ -16,7 +16,25 @@
   --font_Nanum: "NanumSquareNeo-Variable";
   --font_Michroma: "Michroma";
 }
-
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.sec1_main {
+  display: none;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.pg span {
+  background-color: var(--sub1_color);
+  padding: 0.3rem;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--main_color) !important;
+}
 img {
   width: 100%;
 }
@@ -359,7 +377,7 @@ img {
   border: 3px solid lime;
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -442,6 +460,7 @@ img {
 /* sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3  */
 .sec3 {
   border: 2px solid brown;
+  height: 100%;
 }
 .sec3 h2 {
   border: 1px solid red;
