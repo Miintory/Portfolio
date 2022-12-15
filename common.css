@@ -56,6 +56,9 @@ div.clickEffect {
   width: 100%;
   height: 100%;
 }
+.swiper {
+  transition: 5s;
+}
 .pg {
   margin: 1rem;
 }
@@ -648,4 +651,5 @@ img {
 .sec4 {
   border: 1px solid red;
   width: 100%;
+  height: 100px;
 }

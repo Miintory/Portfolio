@@ -12,14 +12,17 @@ $sec1.addEventListener("click", function () {
 
 var swiper = new Swiper(".scroll", {
   direction: "vertical",
+  autoHeight: true,
   slidesPerView: 1,
   spaceBetween: 0,
+  speed: 700,
   mousewheel: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
+
 function clickEffect(e) {
   var d = document.createElement("div");
   d.className = "clickEffect";
