@@ -12,6 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,93 +20,111 @@
       rel="stylesheet"
     />
   </head>
+  <script src="common.js" defer></script>
   <body>
-    <section class="sec1">
-      <!-- sec1 main -->
-      <article class="sec1_main">
-        <div class="bell">
-          <span class="bell fa fa-bell"></span>
-        </div>
-      </article>
-
-      <!-- sec1 sub -->
-      <article class="sec1_sub">
-        <h1>Ring A Bell</h1>
-        <p>마음을 울리는 디자이너</p>
-      </article>
-    </section>
-
-    <!-- sec2 -->
-    <section class="sec2 mw">
-      <h2>ABOUT</h2>
-      <article class="sec2_left">
-        <div class="IDP">
-          <div><img src="" alt="" />사진</div>
-        </div>
-        <div class="sec2_text">
-          <p>
-            김종민
-            <span>KIM JONG MIN</span>
-            <span>#성실함 #책임감 #긍정적</span>
-          </p>
-        </div>
-      </article>
-      <article class="sec2_right">
-        <p class="cg">EDUCATION</p>
-        <p class="cg">CERTIFACTES</p>
-        <p class="cg">SKILLS</p>
-        <div class="skills">
-          <img src="./img/HTML5_logonotext.png" alt="" />
-          <img src="./img/css3_logonotext.png" alt="" />
-          <img src="./img/photoshop_logonotext.png" alt="" />
-          <img src="./img/illustrator_logonotext.png" alt="" />
-          <img src="./img/visual_studio_logonotext.png" alt="" />
-          <img src="./img/js_logonotext.png" alt="" />
-          <img src="./img/jQuery_logonotext.png" alt="" />
-        </div>
-      </article>
-    </section>
-
-    <!-- sec3 -->
-    <section class="sec3 mw">
-      <h2>PORTFOLIO</h2>
-      <ul>
-        <li>
-          <div class="mockup">
-            <img src="./img/" alt="" />
-            <div class="but">
-              <button>GITHUB</button>
-              <button>PC</button>
-            </div>
+    <div class="wrap">
+      <section class="sec1">
+        <!-- sec1 main -->
+        <article class="sec1_main">
+          <div class="bells">
+            <span class="bell fa fa-bell"></span>
           </div>
-        </li>
-        <li>
-          <div class="mockup">
-            <img src="" alt="" />
-            <div class="but">
-              <button>GITHUB</button>
-              <button>PC</button>
-            </div>
+          <div class="title-box">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
           </div>
-        </li>
-        <li>
-          <div class="mockup">
-            <img src="" alt="" />
-            <div class="but">
-              <button>GITHUB</button>
-              <button>PC</button>
-              <button>MOBILE</button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
+        </article>
+        <!-- sec1 sub -->
+        <article class="sec1_sub">
+          <h1>Ring A Bell</h1>
+          <p>마음을 울리는 디자이너</p>
+        </article>
+      </section>
 
-    <!-- sec4 -->
-    <section class="sec4">
-      <h2>CONTACT</h2>
-      <p>E-mail : mrk3282@gmail.com</p>
-      <p>추가로적을말</p>
-    </section>
+      <!-- sec2 -->
+      <section class="sec2 mw">
+        <h2>ABOUT</h2>
+        <article class="sec2_left">
+          <div class="pic">
+            <div class="IDP"><img src="" alt="" /></div>
+          </div>
+          <div class="sec2_text">
+            <p>
+              김종민
+              <span>KIM JONG MIN</span>
+              <span>#성실함 #책임감 #긍정적</span>
+            </p>
+          </div>
+        </article>
+        <article class="sec2_right">
+          <p class="cg">EDUCATION</p>
+          <span>그린컴퓨터학원 웹디자인기능사(웹퍼블리셔,프론트앤드) 과정</span>
+          <br /><span>22.07.22 ~ 23.01.03</span>
+          <p class="cg">CERTIFACTES</p>
+          <span>웹디자인기능사 (예정)</span>
+          <p class="cg">SKILLS</p>
+          <div class="skills">
+            <img src="./img/HTML5_logonotext.png" alt="" />
+            <img src="./img/css3_logonotext.png" alt="" />
+            <img src="./img/photoshop_logonotext.png" alt="" />
+            <img src="./img/illustrator_logonotext.png" alt="" />
+            <img src="./img/visual_studio_logonotext.png" alt="" />
+            <img src="./img/js_logonotext.png" alt="" />
+            <img src="./img/jQuery_logonotext.png" alt="" />
+          </div>
+        </article>
+      </section>
+
+      <!-- sec3 -->
+      <section class="sec3 mw">
+        <h2>PORTFOLIO</h2>
+        <ul class="con">
+          <li>
+            <div class="mockup">
+              <img src="./img/reafruit.png" alt="" />
+              <div class="but">
+                <button
+                  class="button button--moema button--text-thick button--text-upper button--size-s"
+                >
+                  GITHUB
+                </button>
+                <button
+                  class="button button--moema button--text-thick button--text-upper button--size-s"
+                >
+                  PC
+                </button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="mockup">
+              <img src="./img/selecto.png" alt="" />
+              <div class="but">
+                <button>GITHUB</button>
+                <button>PC</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="mockup">
+              <img src="./img/leonidas.png" alt="" />
+              <div class="but">
+                <button>GITHUB</button>
+                <button>PC</button>
+                <button>MOBILE</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- sec4 -->
+      <section class="sec4">
+        <h2>CONTACT</h2>
+        <p>E-mail : mrk3282@gmail.com</p>
+        <p>추가로적을말</p>
+      </section>
+    </div>
   </body>
 </html>
