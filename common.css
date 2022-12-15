@@ -88,8 +88,8 @@ img {
   display: flex;
   flex-direction: column;
 }
-.sec1_main.on {
-  /* display: none; */
+.sec1_main.on .bell {
+  opacity: 0;
 }
 
 .sec1_sub {
@@ -123,6 +123,7 @@ img {
   font-size: 1.5rem;
   color: white;
 }
+
 /* bell */
 .sec1_main .bells {
   /* border: 1px solid green; */
@@ -474,7 +475,7 @@ img {
   text-align: center;
 }
 .pic {
-  border: 1px solid blue;
+  border: 1px solid green;
   height: 80%;
   display: flex;
   align-items: center;
@@ -550,6 +551,8 @@ img {
 }
 .sec3 .con {
   display: flex;
+  height: 100%;
+  border: 1px solid skyblue;
 }
 .but {
   width: 100%;
@@ -644,4 +647,5 @@ img {
 
 .sec4 {
   border: 1px solid red;
+  width: 100%;
 }
