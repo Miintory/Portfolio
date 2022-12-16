@@ -11,12 +11,12 @@ $sec1.addEventListener("click", function () {
 });
 
 var swiper = new Swiper(".scroll", {
-  direction: "vertical",
   autoHeight: true,
-  slidesPerView: 1,
+  direction: "vertical",
+  slidesPerView: "auto",
   spaceBetween: 0,
-  speed: 700,
   mousewheel: true,
+  speed: 700,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
