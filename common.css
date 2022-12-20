@@ -634,106 +634,71 @@ img {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
 }
-
 .sec3 .con {
   display: flex;
+  justify-content: center;
   border: 1px solid skyblue;
   align-items: center;
-  height: 70%;
+  /* height: 70%; */
 }
-.btn {
-  width: 100%;
+.sec3 .con li {
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
-.btn > button {
+.mockup {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 1px solid green; */
   position: relative;
 }
-.button--moema {
-  padding: 1.5em 3em;
-  border-radius: 50px;
-  background: var(--main_color);
-  color: #fff;
-  -webkit-transition: background-color 0.3s, color 0.3s;
-  transition: background-color 0.3s, color 0.3s;
+.mockup img {
+  /* border: 1px solid blue; */
+  display: block;
 }
-.button--moema.button--inverted {
-  background: #eceff1;
-  color: #37474f;
-}
-.button--moema::before {
-  content: "";
+.btns {
   position: absolute;
-  top: -20px;
-  left: -20px;
-  bottom: -20px;
-  right: -20px;
-  background: inherit;
-  border-radius: 50px;
-  z-index: -1;
-  opacity: 0.4;
-  -webkit-transform: scale3d(0.8, 0.5, 1);
-  transform: scale3d(0.8, 0.5, 1);
+  bottom: 0;
+  /* border: 1px solid red; */
 }
-.button--moema:hover {
-  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  color: #eceff1;
-  background-color: #3f51b5;
-  -webkit-animation: anim-moema-1 0.3s forwards;
-  animation: anim-moema-1 0.3s forwards;
+.btn1,
+.btn2,
+.btn3 {
+  border: none;
+  border-radius: 20px;
+  /* display: block; */
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--sub1_color);
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  font-weight: bolder;
+  margin: 0 0.5rem;
 }
-.button--moema.button--inverted:hover {
-  color: #eceff1;
-  background-color: #7986cb;
+.btn2 {
+  background-color: white;
+  border: 1px solid var(--main_color);
+  color: var(--main_color);
 }
-.button--moema:hover::before {
-  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
-  animation: anim-moema-2 0.3s 0.3s forwards;
+.btn3 {
+  background-color: var(--main_color);
 }
-@-webkit-keyframes anim-moema-1 {
-  60% {
-    -webkit-transform: scale3d(0.8, 0.8, 1);
-    transform: scale3d(0.8, 0.8, 1);
-  }
-  85% {
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-    transform: scale3d(1.1, 1.1, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+.btn1:hover {
+  background-color: var(--main_color);
 }
-@keyframes anim-moema-1 {
-  60% {
-    -webkit-transform: scale3d(0.8, 0.8, 1);
-    transform: scale3d(0.8, 0.8, 1);
-  }
-  85% {
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-    transform: scale3d(1.1, 1.1, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+.btn2:hover {
+  background-color: var(--main_color);
+  color: white;
 }
-@-webkit-keyframes anim-moema-2 {
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes anim-moema-2 {
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
+/* sec4  sec4  sec4  sec4  sec4  sec4  sec4  sec4  sec4  sec4  */
 .sec4 {
   border: 1px solid red;
   width: 100%;
@@ -741,14 +706,25 @@ img {
 }
 
 /*  */
+
+@media (max-width: 1200px) {
+  .sec3 .con {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mockup .btns:last-of-type {
+    display: flex;
+  }
+}
+
 @media (max-width: 1000px) {
-  .sec1 {
-  }
-  .sec2 {
-  }
   .sec2_left {
     width: 100%;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
   }
   .sec2_right {
     width: 100%;
@@ -758,9 +734,42 @@ img {
 @media (max-width: 800px) {
   h2 {
     font-size: 1rem;
+    margin-bottom: 0;
+    height: 50px;
+    line-height: 50px;
   }
   span,
   p {
     font-size: 0.75rem;
+  }
+  .cg::before {
+    width: 2px;
+    height: 2px;
+  }
+  .pic .IDP {
+    width: 120px;
+    height: 120px;
+  }
+  .sec2_text {
+    line-height: 1;
+  }
+  .cg {
+    margin: 1rem;
+  }
+  .pg {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .sec2 {
+  }
+  .sec2_right {
+    line-height: 1.2;
+  }
+  .IDP {
+  }
+  .sec2_right .skills img {
+    width: 50px;
   }
 }
