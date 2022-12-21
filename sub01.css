@@ -6,6 +6,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "MinSans-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Milonga&display=swap");
 :root {
@@ -32,13 +39,37 @@ h1 {
   line-height: 100px;
   border: 1px solid red;
 }
+
 h2 {
   font-size: 1.5rem;
+  position: relative;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(48, 47, 112, 0.4);
+  border-radius: 50%;
+  left: -10px;
+  top: auto;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 5px;
+  background-color: rgba(48, 47, 112, 0.1);
+  left: 0;
+  bottom: 25%;
+  z-index: -1;
 }
 h2,
 h3 {
-  padding: 1rem;
+  font-weight: bold;
+  padding: 1rem 0;
 }
+
 h3 {
   font-size: 1.2rem;
   color: #999;
@@ -70,14 +101,47 @@ h3 {
 .style h2 {
   width: 100%;
 }
+.color,
+.font {
+  /* padding: 0 1rem; */
+}
 .color {
   width: 50%;
 }
 .color .box {
   width: 50%;
-  height: 30px;
+  height: 50px;
   background-color: #302f70;
+}
+.box:last-of-type {
+  background-color: #d9d9d9;
 }
 .font {
   width: 50%;
+  font-family: "MinSans-Regular";
+}
+.f1 {
+  font-size: 40px;
+}
+.f2 {
+  font-size: 32px;
+}
+.tar h2 {
+}
+.tar_con {
+  display: flex;
+  justify-content: space-around;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: #999;
+  border-radius: 50%;
+  position: relative;
+}
+.circle p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
