@@ -1,0 +1,83 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Milonga&display=swap");
+:root {
+  font-family: "NanumSquareNeo-Variable";
+  --main_color: #112152;
+  --sub1_color: #ffcc00;
+  --sub2_color: #ffeeaa;
+  --font_Nanum: "NanumSquareNeo-Variable";
+  --font_Michroma: "Michroma";
+  --font_Milonga: "Milonga";
+}
+.mw {
+  width: calc(100% - 2rem);
+  max-width: 1400px;
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+h1 {
+  font-size: 2rem;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid red;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h2,
+h3 {
+  padding: 1rem;
+}
+h3 {
+  font-size: 1.2rem;
+  color: #999;
+}
+.mockup {
+  text-align: center;
+}
+.back {
+  background-image: url(./img/sub_img/real.png);
+  height: 65vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0.3;
+}
+.mockup img {
+  width: 50%;
+  border: 1px solid black;
+}
+
+.style {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid blue;
+}
+.style h2 {
+  width: 100%;
+}
+.color {
+  width: 50%;
+}
+.color .box {
+  width: 50%;
+  height: 30px;
+  background-color: #302f70;
+}
+.font {
+  width: 50%;
+}

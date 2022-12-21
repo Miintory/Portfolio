@@ -16,7 +16,7 @@ var swiper = new Swiper(".scroll", {
   slidesPerView: "auto",
   spaceBetween: 0,
   mousewheel: true,
-  speed: 700,
+  speed: 600,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
