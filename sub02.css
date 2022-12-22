@@ -1,0 +1,168 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MinSans-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Milonga&display=swap");
+:root {
+  font-family: "NanumSquareNeo-Variable";
+  --font_Nanum: "NanumSquareNeo-Variable";
+  --font_Michroma: "Michroma";
+  --font_Milonga: "Milonga";
+}
+.mw {
+  width: calc(100% - 2rem);
+  max-width: 1400px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+h1 {
+  font-size: 2rem;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  /* border: 1px solid red; */
+}
+
+h2 {
+  font-size: 1.5rem;
+  position: relative;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(187, 7, 18, 0.4);
+  border-radius: 50%;
+  left: -10px;
+  top: auto;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 5px;
+  background-color: rgba(187, 7, 18, 0.1);
+  left: 0;
+  bottom: 25%;
+  z-index: -1;
+}
+h2 {
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.pj p,
+.rn p,
+.color,
+.font {
+  padding: 0 1rem;
+}
+.mockup {
+  text-align: center;
+}
+.back {
+  background-image: url(./img/sub_img/selbg.jpg);
+  background-position: center;
+  height: 65vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0.2;
+}
+.mockup img {
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.style {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+.style h2 {
+  width: 100%;
+}
+.color,
+.font {
+  /* padding: 0 1rem; */
+}
+.color {
+  width: 50%;
+}
+.color .box {
+  width: 50%;
+  height: 50px;
+  background-color: #bb0712;
+  margin: 1rem 0;
+}
+.box:nth-of-type(2) {
+  background-color: #fffbac;
+}
+.box:nth-of-type(3) {
+  background-color: #fef104;
+}
+.box:last-of-type {
+  background-color: #373737;
+}
+.font {
+  width: 50%;
+  font-family: "MinSans-Regular";
+}
+.f1 {
+  font-size: 40px;
+}
+.f2 {
+  font-size: 32px;
+}
+.f3 {
+  font-size: 20px;
+}
+.f4 {
+  font-size: 16px;
+}
+.tar h2 {
+}
+.tar_con {
+  display: flex;
+  justify-content: space-around;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(187, 7, 18, 0.1);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.circle p {
+  font-size: 1.2rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}

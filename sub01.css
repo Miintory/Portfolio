@@ -17,9 +17,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Milonga&display=swap");
 :root {
   font-family: "NanumSquareNeo-Variable";
-  --main_color: #112152;
-  --sub1_color: #ffcc00;
-  --sub2_color: #ffeeaa;
   --font_Nanum: "NanumSquareNeo-Variable";
   --font_Michroma: "Michroma";
   --font_Milonga: "Milonga";
@@ -29,6 +26,7 @@
   max-width: 1400px;
   margin: auto;
 }
+
 img {
   width: 100%;
 }
@@ -37,7 +35,7 @@ h1 {
   height: 100px;
   text-align: center;
   line-height: 100px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 h2 {
@@ -64,39 +62,46 @@ h2::after {
   bottom: 25%;
   z-index: -1;
 }
-h2,
-h3 {
+h2 {
   font-weight: bold;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 h3 {
   font-size: 1.2rem;
   color: #999;
 }
+
+.pj p,
+.rn p,
+.color,
+.font {
+  padding: 0 1rem;
+}
 .mockup {
   text-align: center;
 }
 .back {
-  background-image: url(./img/sub_img/real.png);
+  background-image: url(./img/sub_img/realbg.png);
+  background-position: center;
   height: 65vh;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -10;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .mockup img {
   width: 50%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .style {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .style h2 {
   width: 100%;
@@ -112,6 +117,7 @@ h3 {
   width: 50%;
   height: 50px;
   background-color: #302f70;
+  margin: 1rem 0;
 }
 .box:last-of-type {
   background-color: #d9d9d9;
@@ -126,6 +132,12 @@ h3 {
 .f2 {
   font-size: 32px;
 }
+.f3 {
+  font-size: 20px;
+}
+.f4 {
+  font-size: 16px;
+}
 .tar h2 {
 }
 .tar_con {
@@ -135,13 +147,16 @@ h3 {
 .circle {
   width: 200px;
   height: 200px;
-  background-color: #999;
+  background-color: rgba(48, 47, 112, 0.1);
   border-radius: 50%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .circle p {
+  font-size: 1.2rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
