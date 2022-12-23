@@ -1,13 +1,18 @@
-const $bell = document.querySelector(".bells"),
+const $bells = document.querySelector(".bells"),
   $sub = document.querySelector(".sec1_sub"),
   $sec1 = document.querySelector(".sec1"),
   $secMain = document.querySelector(".sec1_main"),
-  $rad = document.querySelector(".radius");
+  $rad = document.querySelector(".radius"),
+  $bell = document.querySelector(".bell");
 
 $sec1.addEventListener("click", function () {
   $sub.classList.add("on");
   $secMain.classList.add("on");
   $rad.classList.add("on");
+});
+
+$bell.addEventListener("click", function () {
+  $bell.classList.add("on");
 });
 
 var swiper = new Swiper(".scroll", {

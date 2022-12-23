@@ -20,6 +20,9 @@
   --font_Nanum: "NanumSquareNeo-Variable";
   --font_Michroma: "Michroma";
   --font_Milonga: "Milonga";
+  --main_color: #112152;
+  --sub1_color: #ffcc00;
+  --sub2_color: #ffeeaa;
 }
 .mw {
   width: calc(100% - 2rem);
@@ -37,34 +40,29 @@ h1 {
   line-height: 100px;
   /* border: 1px solid red; */
 }
-
+.h2 {
+  width: 100%;
+}
 h2 {
+  display: inline-block;
   font-size: 1.5rem;
   position: relative;
-}
-h2::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(48, 47, 112, 0.4);
-  border-radius: 50%;
-  left: -10px;
-  top: auto;
+  color: var(--main_color);
+  font-family: var(--font_Michroma);
+  font-weight: bold;
+  padding: 2rem 0;
+  /* border: 1px solid red; */
 }
 h2::after {
   content: "";
   position: absolute;
-  width: 20%;
-  height: 5px;
-  background-color: rgba(48, 47, 112, 0.1);
-  left: 0;
-  bottom: 25%;
+  width: 100%;
+  height: 7px;
+  background-color: var(--sub2_color);
+  left: 50%;
+  bottom: 35%;
+  transform: translate(-50%, -35%);
   z-index: -1;
-}
-h2 {
-  font-weight: bold;
-  padding: 2rem 0;
 }
 
 h3 {
@@ -104,7 +102,7 @@ h3 {
   /* border: 1px solid blue; */
 }
 .style h2 {
-  width: 100%;
+  /* width: 100%; */
 }
 .color,
 .font {
@@ -147,7 +145,7 @@ h3 {
 .circle {
   width: 200px;
   height: 200px;
-  background-color: rgba(48, 47, 112, 0.1);
+  background-color: var(--sub2_color);
   border-radius: 50%;
   position: relative;
   display: flex;

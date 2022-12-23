@@ -35,7 +35,7 @@ body {
 }
 h2 {
   font-size: 2rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100px;
   text-align: center;
   line-height: 100px;
@@ -44,6 +44,7 @@ h2 {
   position: relative;
   display: inline-block;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 .h2 {
   width: 100%;
@@ -148,30 +149,30 @@ img {
   overflow: hidden;
 }
 .sec1_main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100vh;
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.sec1_main.on .bell {
+/* .sec1_main.on .bell {
   opacity: 0;
-}
+} */
 
 .sec1_sub {
   width: 100%;
   height: 100%;
   display: flex;
   position: fixed;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   color: white;
   display: none;
   transition: 3s;
 }
 .sec1_sub.on {
   display: block;
-  z-index: 9999;
+  z-index: 50;
 }
 .sub_text {
   /* border: 1px solid red; */
@@ -192,7 +193,7 @@ img {
 }
 /* scroll */
 .sec1_sub .scrolldown {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   bottom: -150%;
   left: 50%;
@@ -233,7 +234,6 @@ img {
 /* bell */
 .sec1_main .bells {
   /* border: 1px solid green; */
-  width: 100%;
   margin: auto;
   position: relative;
 }
@@ -250,6 +250,7 @@ img {
   display: block;
   margin: auto;
   top: 50%;
+  left: 50%;
   width: 100px;
   height: 100px;
   font-size: 100px;
@@ -261,9 +262,21 @@ img {
   animation: ring 7s 0.7s ease-in-out infinite;
   transform-origin: 50% 4px;
   z-index: 5;
+  transition: 2s;
 }
-
-@-webkit-keyframes ring {
+.bell.on {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 3rem;
+  z-index: 9999 !important;
+}
+.bell.on span {
+  opacity: 0;
+}
+.bell @-webkit-keyframes ring {
   0% {
     -webkit-transform: rotateZ(0);
   }
@@ -504,7 +517,7 @@ img {
 }
 .radius.on {
   transform: scale(40);
-  z-index: 10;
+  z-index: 5;
 }
 .place {
   background: var(--sub1_color);
@@ -545,7 +558,7 @@ img {
 
 /* sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2  */
 .sec2 {
-  border: 3px solid lime;
+  /* border: 3px solid lime; */
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -556,14 +569,14 @@ img {
 .sec2_left {
   /* height: 50%; */
   width: 50%;
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .pic {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 50%;
   display: flex;
   align-items: center;
@@ -577,7 +590,7 @@ img {
   margin: auto;
 }
 .sec2_text {
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 .sec2_text p {
   margin: 1rem;
@@ -596,7 +609,7 @@ img {
   font-family: var(--font_Milonga);
 }
 .sec2_right {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 50%;
 }
 .cg {
