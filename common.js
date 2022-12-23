@@ -42,3 +42,16 @@ function clickEffect(e) {
   );
 }
 document.addEventListener("click", clickEffect);
+
+// 호버시 붕뜨는느낌
+var text = $("sub_text h1").text(),
+  textArr = text.split("");
+
+$("sub_text h1").html("");
+
+$.each(textArr, function (i, v) {
+  if (v == " ") {
+    $(".sub_text h1").append('<span class="space"></span>');
+  }
+  $(".sub_text h1").append("<span>" + v + "</span>");
+});
