@@ -583,13 +583,25 @@ img {
   display: flex;
   align-items: center;
 }
-.IDP {
+
+.border {
   border: 6px solid var(--sub2_color);
   border-radius: 50%;
   width: 200px;
   height: 200px;
   box-shadow: 0 0 40px var(--sub1_color);
   margin: auto;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.piccon img {
+  width: 200%;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
 }
 .sec2_text {
   /* border: 1px solid red; */
@@ -677,7 +689,7 @@ img {
 /* sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3  */
 .sec3 {
   /* border: 1px solid brown; */
-  /height: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -796,13 +808,13 @@ img {
   left: 0;
   top: 0;
   width: 0;
-  height: 1px;
+  height: 4px;
   transition: 0.3s;
 }
 .outline span:nth-child(2) {
   right: 0;
   top: 0;
-  width: 1px;
+  width: 4px;
   height: 0;
   transition: 0.3s linear;
 }
@@ -810,13 +822,13 @@ img {
   right: 0;
   bottom: 0;
   width: 0;
-  height: 1px;
+  height: 4px;
   transition: 0.3s linear;
 }
 .outline span:nth-child(4) {
   left: 0;
   bottom: 0;
-  width: 1px;
+  width: 4px;
   height: 0;
   transition: 0.3s linear;
 }
@@ -879,24 +891,21 @@ img {
 }
 /* sec4  sec4  sec4  sec4  sec4  sec4  sec4  sec4  sec4  sec4  */
 .sec4 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
-  height: 30vh !important;
+  height: 40vh !important;
+}
+.qr {
+  margin: 1rem auto;
+  width: 100px;
 }
 .sec4_con {
   text-align: center;
 }
+
 /*  */
 
 @media (max-width: 1200px) {
-  .sec3 .con {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .btns:last-of-type {
-    display: flex;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -916,7 +925,6 @@ img {
   }
   .sec2_text p {
     line-height: 1.4;
-
     font-size: 0.75rem;
   }
   .sec2_right {
@@ -931,34 +939,50 @@ img {
     height: 50px;
     line-height: 50px;
   }
+
   span,
-  p {
+  p,
+  strong {
     font-size: 0.75rem;
   }
   .cg::before {
     width: 2px;
     height: 2px;
   }
-  .pic .IDP {
+  .border {
     width: 120px;
     height: 120px;
+  }
+  .pic {
+    height: 80%;
   }
   .sec2_text {
     line-height: 1;
   }
+
   .cg {
     margin: 1rem;
   }
   .pg {
     display: none;
   }
-
+  .sec3 .con {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .btns:last-of-type {
+    display: flex;
+  }
   .mockup img,
   .btns {
     padding-bottom: 0.5rem;
   }
   .mockup {
-    width: 84%;
+    width: 80%;
+  }
+  .mockup img {
+    width: 100%;
   }
   .btn1,
   .btn2,
@@ -969,15 +993,34 @@ img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .h2 {
+    padding: 1rem;
+  }
   .sec2 {
+  }
+  .sec2_left {
+    height: 180px;
   }
   .sec2_right {
     line-height: 1.2;
   }
-  .IDP {
+  .sec2_text p:first-of-type {
+    padding: 0;
+  }
+  .sec2_text span:first-of-type,
+  .sec2_text span:last-of-type {
+    font-size: 0.75rem;
+  }
+
+  .sec2_text p:last-of-type {
+    line-height: 1rem;
   }
   .sec2_right .skills img {
     width: 50px;
+  }
+
+  .mockup_text li {
+    font-size: 1rem;
   }
 }

@@ -1,0 +1,228 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MinSans-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Milonga&display=swap");
+
+/* 프리텐다드 */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 에스코어드림 */
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 한나체 */
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+.hanna * {
+  font-family: "Hanna", fantasy;
+}
+:root {
+  font-family: "NanumSquareNeo-Variable";
+  --font_Nanum: "NanumSquareNeo-Variable";
+  --font_Michroma: "Michroma";
+  --font_Milonga: "Milonga";
+  --main_color: #112152;
+  --sub1_color: #ffcc00;
+  --sub2_color: #ffeeaa;
+}
+.mw {
+  width: calc(100% - 2rem);
+  max-width: 1400px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  font-size: 2rem;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  /* border: 1px solid red; */
+}
+
+.h2 {
+  width: 100%;
+}
+h2 {
+  display: inline-block;
+  font-size: 1.5rem;
+  position: relative;
+  color: var(--main_color);
+  font-family: var(--font_Michroma);
+  font-weight: bold;
+  padding: 2rem 0;
+  /* border: 1px solid red; */
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  background-color: var(--sub2_color);
+  left: 50%;
+  bottom: 35%;
+  transform: translate(-50%, -35%);
+  z-index: -1;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.pj p,
+.rn p,
+.color,
+.font {
+  padding: 0 1rem;
+}
+.mockup {
+  text-align: center;
+}
+.background {
+  background-color: #1c3160;
+  background-position: center;
+  height: 65vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0.2;
+}
+.mockup img {
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.style {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+.style h2 {
+}
+.color,
+.font {
+  /* padding: 0 1rem; */
+}
+.color {
+  width: 50%;
+}
+.color .box {
+  width: 50%;
+  height: 50px;
+  background-color: #1c3160;
+  margin: 1rem 0;
+}
+.box:nth-of-type(2) {
+  background-color: #f0f5ff;
+}
+.box:nth-of-type(3) {
+  background-color: #fcf4e7;
+}
+.box:nth-of-type(4) {
+  background-color: #f5e6ce;
+}
+.box:last-of-type {
+  background-color: #9d9d9d;
+}
+.font {
+  width: 50%;
+  font-family: "MinSans-Regular";
+}
+.f1 {
+  font-family: "Pretendard-Regular";
+  font-size: 40px;
+}
+.f2 {
+  font-family: "Hanna", fantasy;
+  font-size: 32px;
+}
+.f3 {
+  font-family: "S-CoreDream-3Light";
+  font-size: 20px;
+}
+.f4 {
+  font-size: 16px;
+}
+.tar h2 {
+}
+.tar_con {
+  display: flex;
+  justify-content: space-around;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: var(--sub2_color);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.circle p {
+  font-size: 1.2rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* gotop */
+.gotop {
+  transform: rotate(-90deg);
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: 0.3s;
+}
+.gotop:hover {
+  bottom: 60px;
+}
+.gotop img {
+  width: 80%;
+}
+/* return */
+.return {
+  position: absolute;
+  left: 32%;
+  top: 0;
+  transition: 0.3s;
+}
+.return img {
+  width: 30%;
+}
+.return:hover {
+  left: 31.5%;
+}

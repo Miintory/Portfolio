@@ -34,6 +34,7 @@ img {
   width: 100%;
 }
 h1 {
+  position: relative;
   font-size: 2rem;
   height: 100px;
   text-align: center;
@@ -80,7 +81,7 @@ h3 {
 .mockup {
   text-align: center;
 }
-.back {
+.background {
   background-image: url(./img/sub_img/selbg.jpg);
   background-position: center;
   height: 65vh;
@@ -163,4 +164,33 @@ h3 {
   position: absolute;
   width: 100%;
   text-align: center;
+}
+
+/* gotop */
+.gotop {
+  transform: rotate(-90deg);
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: 0.3s;
+}
+.gotop:hover {
+  bottom: 60px;
+}
+.gotop img {
+  width: 80%;
+}
+/* return */
+.return {
+  position: absolute;
+  left: 32%;
+  top: 0;
+  transition: 0.3s;
+}
+.return img {
+  width: 30%;
+}
+.return:hover {
+  left: 31.5%;
 }
