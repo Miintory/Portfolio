@@ -2,14 +2,10 @@
 Miintory
 
 # Contests
-Intro
-
-About
-
-skills
-
-Work
-
+*Intro
+*About
+*skills
+*Work
 > * list
 > `textbox`
 project1 (리얼후르츠)
